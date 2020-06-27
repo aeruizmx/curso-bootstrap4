@@ -21,8 +21,8 @@
         <img src="assets/images/platzi-logo.png" alt="Platzi Logo">
         Conf Hawaii
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -41,7 +41,7 @@
             <a class="nav-link" href="#conviertete">Conviertete en orador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+            <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-toggle="modal">Comprar tickets</a>
           </li>
         </ul>
 
@@ -68,12 +68,13 @@
           <div class="row align-items-center">
             <div class="col-md-6 offset-md-6 text-center text-md-right">
               <h1>Platzi Conf Hawaii</h1>
-              <p class="d-none d-md-block">Platzi Conf llega por primera vez a <abbr data-toggle="tooltip" title="No olvides tu traje de baño y bloqueador :)">Hawaii</abbr>! Un evento para compartir con
+              <p class="d-none d-md-block">Platzi Conf llega por primera vez a <abbr data-toggle="tooltip"
+                  title="No olvides tu traje de baño y bloqueador :)">Hawaii</abbr>! Un evento para compartir con
                 nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro del
                 internet. Ven a conocer a mienbros del team Platz, a otros estudiantes de Platzi y a los oradores de
                 primer nivel que tenemos para ti. Te esperamos</p>
               <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-              <button type="button" class="btn btn-platzi">Comprar tickets</button>
+              <button type="button" class="btn btn-platzi" data-target="#modalCompra" data-toggle="modal">Comprar tickets</button>
             </div>
           </div>
         </div>
@@ -185,7 +186,8 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          Anótate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>.
+          Anótate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla
+            ignite</abbr>.
           ¡Cuéntanos de qué quieres hablar!
         </div>
       </div>
@@ -202,7 +204,8 @@
             </div>
             <div class="form-row">
               <div class="form-group col">
-                <textarea name="text" class="form-control form-control-lg" placeholder="¿Sobre qué quieres hablar?" id="" ></textarea>
+                <textarea name="text" class="form-control form-control-lg" placeholder="¿Sobre qué quieres hablar?"
+                  id=""></textarea>
                 <small class="form-text text-muted">Recuerda incluir un título para tu charla.</small>
               </div>
             </div>
@@ -243,6 +246,29 @@
     </div>
   </footer>
   <!-- FIN DEL FOOTER -->
+  <!-- MODAL -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN DEL MODAL -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
